@@ -52,8 +52,12 @@
 			isa = PBXGroup;
 			children = (
 				AF708A7029F18336009560DB /* ScuffApp.swift */,
+				AF708A7E29F186D0009560DB /* Views */,
+				AF708A7F29F186D9009560DB /* Models */,
+				AF708A8129F186E7009560DB /* Services */,
+				AF708A8229F186F1009560DB /* Utilities */,
+				AF708A8329F186FA009560DB /* Resources */,
 				AF708A7229F18336009560DB /* ContentView.swift */,
-				AF708A7429F18337009560DB /* Assets.xcassets */,
 				AF708A7629F18337009560DB /* Preview Content */,
 			);
 			path = Scuff;
@@ -65,6 +69,50 @@
 				AF708A7729F18337009560DB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AF708A7E29F186D0009560DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AF708A8429F18774009560DB /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AF708A7F29F186D9009560DB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AF708A8129F186E7009560DB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AF708A8229F186F1009560DB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		AF708A8329F186FA009560DB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AF708A7429F18337009560DB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AF708A8429F18774009560DB /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
