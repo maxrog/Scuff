@@ -6,16 +6,22 @@
 //
 
 import SwiftUI
+/*
+ https://rapidapi.com/tg4-solutions-tg4-solutions-default/api/the-sneaker-database/details
+ */
 
 @main
 struct ScuffApp: App {
     
     @Environment(\.scenePhase) var scenePhase
-    @StateObject var settingsViewModel = SettingsViewModel()
+    @StateObject var settings = SettingsViewModel()
     
     var body: some Scene {
         WindowGroup {
-            TabView(selection: $settingsViewModel.selectedTabIndex) {
+            TabView(selection: $settings.selectedTabIndex) {
+                /*
+                 TODO try to include pagination / infinite scroll / search function
+                 */
                 Text("Discover")
                     .tabItem {
                         Image(systemName: "point.3.connected.trianglepath.dotted")
@@ -35,7 +41,7 @@ struct ScuffApp: App {
                     }
                     .tag(Tabs.settings.rawValue)
             }
-            .environmentObject(settingsViewModel)
+            .environmentObject(settings)
         }
         .onChange(of: scenePhase) { newScenePhase in
             

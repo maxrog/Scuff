@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 /*
 https://stackoverflow.com/a/64414674
  */
@@ -78,5 +77,4 @@ public extension Color {
             opacity: alpha
         )
     }
-
 }
