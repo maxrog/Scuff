@@ -14,7 +14,9 @@ import SwiftUI
 struct ScuffApp: App {
     
     @Environment(\.scenePhase) var scenePhase
+    
     @StateObject var settings = SettingsViewModel()
+    @StateObject var theme = ThemeManager()
     
     var body: some Scene {
         WindowGroup {
@@ -25,23 +27,23 @@ struct ScuffApp: App {
                 Text("Discover")
                     .tabItem {
                         Image(systemName: "point.3.connected.trianglepath.dotted")
-                            .foregroundColor(Preferences.colors.accentColor)
+                            .foregroundColor(theme.accentColor)
                     }
                     .tag(Tabs.discover.rawValue)
                 Text("Closet")
                     .tabItem {
                         Image(systemName: "point.3.connected.trianglepath.dotted")
-                            .foregroundColor(Preferences.colors.accentColor)
+                            .foregroundColor(theme.accentColor)
                     }
                     .tag(Tabs.closet.rawValue)
                 Text("Settings")
                     .tabItem {
                         Image(systemName: "point.3.connected.trianglepath.dotted")
-                            .foregroundColor(Preferences.colors.accentColor)
+                            .foregroundColor(theme.accentColor)
                     }
                     .tag(Tabs.settings.rawValue)
             }
-            .environmentObject(settings)
+            .environmentObject(theme)
         }
         .onChange(of: scenePhase) { newScenePhase in
             

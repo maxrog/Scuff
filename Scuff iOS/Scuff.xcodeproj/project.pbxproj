@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		AF53807929F1ECDC00618FE3 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF53807829F1ECDC00618FE3 /* ThemeManager.swift */; };
 		AF5FB82F29F1C64400305E8D /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5FB82E29F1C64400305E8D /* SettingsViewModel.swift */; };
-		AF5FB83129F1CFD500305E8D /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5FB83029F1CFD500305E8D /* Preferences.swift */; };
 		AF5FB83429F1D0D200305E8D /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5FB83329F1D0D200305E8D /* FoundationExtensions.swift */; };
 		AF708A7129F18336009560DB /* ScuffApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF708A7029F18336009560DB /* ScuffApp.swift */; };
 		AF708A7529F18337009560DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF708A7429F18337009560DB /* Assets.xcassets */; };
@@ -19,7 +18,6 @@
 /* Begin PBXFileReference section */
 		AF53807829F1ECDC00618FE3 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		AF5FB82E29F1C64400305E8D /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
-		AF5FB83029F1CFD500305E8D /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		AF5FB83329F1D0D200305E8D /* FoundationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationExtensions.swift; sourceTree = "<group>"; };
 		AF708A6D29F18336009560DB /* Scuff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scuff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF708A7029F18336009560DB /* ScuffApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScuffApp.swift; sourceTree = "<group>"; };
@@ -119,7 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				AF5FB83229F1D03100305E8D /* Extensions */,
-				AF5FB83029F1CFD500305E8D /* Preferences.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -214,7 +211,6 @@
 				AF708A7129F18336009560DB /* ScuffApp.swift in Sources */,
 				AF53807929F1ECDC00618FE3 /* ThemeManager.swift in Sources */,
 				AF5FB82F29F1C64400305E8D /* SettingsViewModel.swift in Sources */,
-				AF5FB83129F1CFD500305E8D /* Preferences.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
