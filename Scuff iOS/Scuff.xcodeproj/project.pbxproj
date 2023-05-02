@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF4998C52A01D53C001252AD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4998C42A01D53C001252AD /* SettingsView.swift */; };
 		AF53807929F1ECDC00618FE3 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF53807829F1ECDC00618FE3 /* ThemeManager.swift */; };
 		AF5FB82F29F1C64400305E8D /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5FB82E29F1C64400305E8D /* SettingsViewModel.swift */; };
 		AF5FB83429F1D0D200305E8D /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5FB83329F1D0D200305E8D /* FoundationExtensions.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF4998C42A01D53C001252AD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		AF53807829F1ECDC00618FE3 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		AF5FB82E29F1C64400305E8D /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		AF5FB83329F1D0D200305E8D /* FoundationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationExtensions.swift; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 			isa = PBXGroup;
 			children = (
 				AF5FB82E29F1C64400305E8D /* SettingsViewModel.swift */,
+				AF4998C42A01D53C001252AD /* SettingsView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF4998C52A01D53C001252AD /* SettingsView.swift in Sources */,
 				AF5FB83429F1D0D200305E8D /* FoundationExtensions.swift in Sources */,
 				AF708A7129F18336009560DB /* ScuffApp.swift in Sources */,
 				AF53807929F1ECDC00618FE3 /* ThemeManager.swift in Sources */,

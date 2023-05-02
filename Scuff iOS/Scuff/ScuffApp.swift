@@ -16,7 +16,6 @@ struct ScuffApp: App {
     @Environment(\.scenePhase) var scenePhase
     
     @StateObject var settings = SettingsViewModel()
-    @StateObject var theme = ThemeManager()
     
     var body: some Scene {
         WindowGroup {
@@ -25,25 +24,29 @@ struct ScuffApp: App {
                  TODO try to include pagination / infinite scroll / search function
                  */
                 Text("Discover")
+                    .background(settings.theme.backgroundColor)
+                    .foregroundColor(settings.theme.textColor)
                     .tabItem {
                         Image(systemName: "point.3.connected.trianglepath.dotted")
-                            .foregroundColor(theme.accentColor)
+                            .foregroundColor(settings.theme.accentColor)
                     }
                     .tag(Tabs.discover.rawValue)
                 Text("Closet")
+                    .background(settings.theme.backgroundColor)
+                    .foregroundColor(settings.theme.textColor)
                     .tabItem {
                         Image(systemName: "point.3.connected.trianglepath.dotted")
-                            .foregroundColor(theme.accentColor)
+                            .foregroundColor(settings.theme.accentColor)
                     }
                     .tag(Tabs.closet.rawValue)
-                Text("Settings")
+                SettingsView()
                     .tabItem {
                         Image(systemName: "point.3.connected.trianglepath.dotted")
-                            .foregroundColor(theme.accentColor)
+                            .foregroundColor(settings.theme.accentColor)
                     }
                     .tag(Tabs.settings.rawValue)
             }
-            .environmentObject(theme)
+            .environmentObject(settings)
         }
         .onChange(of: scenePhase) { newScenePhase in
             
